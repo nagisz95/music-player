@@ -1,0 +1,246 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap');
+
+body {
+    background-image: url(image/background.jpeg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+.musicPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.musicPlayer__left,
+.musicPlayer__right {
+    width: 340px;
+    height: 800px;
+    background-color: white;
+    border-radius: 25px;
+}
+.musicPlayer__left {
+    margin-right: 40px;
+    position: relative;
+}
+.musicPlayer__right {
+    margin-left: 40px;
+}
+.musicPlayer__header {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.musicPlayer__artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.musicPlayer__artistImg {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgb(141, 163, 187, 0.4) 0px 5px, rgba(141, 163, 187, 0.3) 0px 10px, rgba(141, 163, 187, 0.2) 0px 15px,
+        rgba(141, 163, 187, 0.1) 0px 20px, rgba(141, 163, 187, 0.05) 0px 25px;
+}
+.musicPlayer__artistDescription{
+    margin-top: 40px;
+}
+.musicPlayer__artistName{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.musicPlayer__artistGenre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.3);
+}
+.musicPlayer__btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.musicPlayer__btnOfShuffle{
+    margin-right: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+.musicPlayer__btnOfLike{
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.musicPlayer__btnOfLike > i{
+    margin-right: 5px;
+}
+.musicPlayer__btnOfLike h4{
+    font-size: 15px;
+}
+.musicPlayer__playList{
+    padding: 20px;
+}
+.musicPlayer__ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.musicPlayer__li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.musicPlayer__li:nth-child(3){
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.musicPlayer__songInfo{
+    display: flex;
+    position: relative;
+}
+.musicPlayer__albumCover--dark{
+    filter: brightness(50%);
+}
+.musicPlayer__songInfo .fa-chart-simple{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.musicPlayer__albumCover{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.musicPlayer__songDescription{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.musicPlayer__songDescription-artist{
+    font-size: 14px;
+    color: rgb(195, 195, 235);
+    display: block;
+    margin-bottom: 8px;
+}
+.musicPlayer__songDescription-title{
+    color: rgb(85, 85, 115);
+    
+}
+.musicPlayer__btnOfMore{
+    color: black;
+}
+.musicPlayer__progressBar{
+    margin: 0 0px 20px 0px;
+}
+.musicPlayer__progressBarWrapper{
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 20px 5px;
+    border-radius: 40em;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.musicPlayer__progressBarDescription .musicPlayer__songDescription-title,
+.musicPlayer__progressBarBtn{
+    color: #fff;
+}
+.musicPlayer__progressBarBtn .fa-pause{
+    margin: 0px 30px;
+}
+.musicPlayer__nowPlaying{
+    margin: 20px;
+}
+.musicPlayer__nowPlayingCoverWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+.musicPlayer__nowPlayingCover{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(0 10px 1rem rgba(23, 23, 23, 0.601));
+}
+.musicPlayer__artistName--center{
+    text-align: center;
+    font-size: 20px;
+}
+.musicPlayer__playBarTime{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.musicPlayer__playBar {
+    padding: 30px;
+    margin-top: 30px;
+}
+.musicPlayer__playBarProgress {
+    position: relative;
+}
+.musicPlayer__playBarProgressBlack {
+    position: absolute;
+    background-color: #000;
+    width: 50%;
+    height: 2px;
+}
+.musicPlayer__playBarProgressGrey {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 2px;
+}
+.musicPlayer__playBarProgressCircle {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+}
+.musicPlayer__controlBtn {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.musicPlayer__controlBtn a {
+    color: black;
+}
+.musicPlayer__controlBtn a:first-child,
+.musicPlayer__controlBtn a:last-child {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+}
+.musicPlayer__controlBtn a:nth-child(3) {
+    filter: drop-shadow(0 4px 1rem rgba(137, 136, 136, 0.601));
+}

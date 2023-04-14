@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Now Playing...</title>
+  </head>
+  <body>
+    <main class="musicPlayer">
+      <article class="musicPlayer__left">
+        <div class="musicPlayer__header">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="musicPlayer__artist">
+          <img class="musicPlayer__artistImg" src="image/dualipa.jpg" alt="" />
+          <div class="musicPlayer__artistDescription">
+            <h1 class="musicPlayer__artistName">Dua Lipa</h1>
+            <span class="musicPlayer__artistGenre">Pop</span>
+          </div>
+        </div>
+        <div class="musicPlayer__btn">
+          <button class="musicPlayer__btnOfShuffle">Shuffle</button>
+          <a href="#" class="musicPlayer__btnOfLike">
+            <i class="fa-solid fa-heart"></i>
+            <h4>212,971</h4>
+          </a>
+        </div>
+        <div class="musicPlayer__playList">
+          <ul class="musicPlayer__ul">
+            <li class="musicPlayer__li">
+              <div class="musicPlayer__songInfo">
+                <img
+                  src="image/dont-start-now.jpg"
+                  class="musicPlayer__albumCover"
+                />
+                <div class="musicPlayer__songDescription">
+                  <span class="musicPlayer__songDescription-artist"
+                    >Dua Lipa</span
+                  >
+                  <h4 class="musicPlayer__songDescription-title">
+                    Don't Start Now
+                  </h4>
+                </div>
+              </div>
+              <a href="#" class="musicPlayer__btnOfMore">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+            </li>
+            <li class="musicPlayer__li">
+              <div class="musicPlayer__songInfo">
+                <img
+                  src="image/dualipa-complete.jpg"
+                  class="musicPlayer__albumCover"
+                />
+                <div class="musicPlayer__songDescription">
+                  <span class="musicPlayer__songDescription-artist"
+                    >Dua Lipa</span
+                  >
+                  <h4 class="musicPlayer__songDescription-title">IDGAF</h4>
+                </div>
+              </div>
+              <a href="#" class="musicPlayer__btnOfMore">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+            </li>
+            <li class="musicPlayer__li">
+              <div class="musicPlayer__songInfo">
+                <img
+                  src="image/future-nostalgia.jpg"
+                  class="musicPlayer__albumCover musicPlayer__albumCover--dark"
+                />
+                <i class="fa-solid fa-chart-simple"></i>
+                <div class="musicPlayer__songDescription">
+                  <span class="musicPlayer__songDescription-artist"
+                    >Dua Lipa</span
+                  >
+                  <h4 class="musicPlayer__songDescription-title">
+                    Break My Heart
+                  </h4>
+                </div>
+              </div>
+              <a href="#" class="musicPlayer__btnOfMore">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+            </li>
+            <li class="musicPlayer__li">
+              <div class="musicPlayer__songInfo">
+                <img
+                  src="image/we-are-good.jpg"
+                  class="musicPlayer__albumCover"
+                />
+                <div class="musicPlayer__songDescription">
+                  <span class="musicPlayer__songDescription-artist"
+                    >Dua Lipa</span
+                  >
+                  <h4 class="musicPlayer__songDescription-title">We're Good</h4>
+                </div>
+              </div>
+              <a href="#" class="musicPlayer__btnOfMore">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="musicPlayer__progressBar">
+          <div class="musicPlayer__progressBarWrapper">
+            <div class="musicPlayer__progressBarDescription">
+              <span class="musicPlayer__songDescription-artist">Dua Lipa</span>
+              <h4 class="musicPlayer__songDescription-title">Break My Heart</h4>
+            </div>
+            <div class="musicPlayer__progressBarBtn">
+              <i class="fa-sharp fa-solid fa-backward-step"></i>
+              <i class="fa-solid fa-pause fa-2xl"></i>
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="musicPlayer__right">
+        <div class="musicPlayer__header">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="musicPlayer__nowPlaying">
+          <div class="musicPlayer__nowPlayingCoverWrapper">
+            <img src="image/future-nostalgia.jpg" alt="" class="musicPlayer__nowPlayingCover">
+          </div>
+          <div class="musicPlayer__artistDescription">
+            <h1 class="musicPlayer__artistName musicPlayer__artistName--center">Break My Heart</h1>
+            <span class="musicPlayer__artistGenre">Dua Lipa</span>
+          </div>
+        </div>
+        <div class="musicPlayer__playBar">
+          <div class="musicPlayer__playBarTime">
+              <span>2:50</span><span>-2:49</span>
+          </div>
+          <div class="musicPlayer__playBarProgress">
+              <div class="musicPlayer__playBarProgressBlack"></div>
+              <div class="musicPlayer__playBarProgressGrey"></div>
+              <div class="musicPlayer__playBarProgressCircle"></div>
+          </div>
+        </div>
+        <div class="musicPlayer__controlBtn">
+          <a href="#"><i class="fa-solid fa-repeat"></i></a>
+          <a href="#"><i class="fa-solid fa-backward-step fa-sm"></i></a>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-play fa-3x"></i></a>
+          <a href="#"><i class="fa-sharp fa-solid fa-forward-step fa-sm"></i></a>
+          <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+        </div>
+      </article>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/019c2e3d78.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
